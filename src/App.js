@@ -15,19 +15,20 @@ function App() {
           <button onClick={() => { setRun(run +3) }}>3 run</button>
           <button onClick={() => { setRun(run+4) }}>4 run</button>
           <button onClick={() => { setRun(run+6) }}>6 run</button>
-          <p>Batting Team</p>
+          <p>Batting Team: </p>
           <p>{run}/{ wicket }</p>
         </div>
         <div className="fielding">
-          <button onClick={() => { setWicket(wicket + 1) }}>Wicket</button>
+          <button onClick={() => { wicket < 10 && setWicket(wicket + 1) }}>Wicket</button>
           <button onClick={() => {
             setNoBalls(noBalls + 1);
             setRun(run+1)
-          }}>No Balls</button>
+          }}>No Ball</button>
           <button onClick={() => {
             setWideBalls(wideBalls + 1);
             setRun(run + 1)
-          }}>Wide Balls</button>
+          }}>Wide Ball</button>
+          <p>Fielding Team: </p>
           <p>{wicket} Wickets</p>
           <p>{noBalls} No balls</p>
           <p>{wideBalls} wide balls</p>

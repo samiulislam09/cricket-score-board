@@ -2,16 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 98vh;
+    height: 95vh;
     font-size: 18px;
     background-color: rgb(202, 202, 202);
+    padding: 10px;
 }
 button{
     margin-right: 10px;
+    margin-bottom: 10px;
     background-color: blue;
     color: white;
     padding: 10px 15px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
